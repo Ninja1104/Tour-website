@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Travel Adventures</title>
+    <link rel="stylesheet" href="booknow.css">
+</head>
+<body>
+        <header>
+            <nav>
+                <div class="logo">
+                    Top Trips
+                </div>
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="booknow.html">Book Now</a>
+                    <a href="service.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="register">
+                    <a href="register.html">Register</a>
+                </div>
+            </nav>
+        </header>
+            <section class="booking-form">
+                <h2>Book Your Trip</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="destination">Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="beach">Tropical Beach</option>
+                        <option value="mountain">Mountain Retreat</option>
+                        <option value="city">City Tour</option>
+                    </select>
+                    
+                    <label for="date">Travel Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <button type="submit">Book Now</button>
+                </form>
+            </section>
+    </div>
+</body>
+</html>

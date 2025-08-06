@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(about.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid yellow;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before{
+    width: 90%;
+}
+
+.register a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: yellow;
+    transition: 0.4s;
+}
+
+.register a:hover{
+    background: white;
+    border: 1px solid yellow;
+    border-radius: 10px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.about-content {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.about-content h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: yellow;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
